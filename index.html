@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bandi Sushma Praveena | Data Science Student</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f7f8fc;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            background: #ffffff;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            z-index: 100;
+        }
+
+        nav h2 {
+            color: #5b4bdb;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            margin-left: 25px;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            color: #5b4bdb;
+        }
+
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #eeeaff, #ffffff);
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 span {
+            color: #5b4bdb;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #5b4bdb;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            margin: 5px;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            background: #4435b5;
+            transform: translateY(-2px);
+        }
+
+        section {
+            padding: 70px 10%;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 35px;
+            color: #5b4bdb;
+        }
+
+        .about {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+            font-size: 18px;
+            color: #555;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .skill {
+            background: white;
+            padding: 15px 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+            font-weight: bold;
+        }
+
+        .project {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        .project h3 {
+            font-size: 25px;
+            margin-bottom: 15px;
+        }
+
+        .project p {
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .education {
+            text-align: center;
+            background: #eeeaff;
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #222;
+            color: white;
+        }
+
+        @media (max-width: 700px) {
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            section {
+                padding: 55px 7%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <h2>Sushma Praveena</h2>
+
+        <div>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+
+    <!-- Home -->
+    <section class="hero">
+
+        <div>
+            <h1>Hello, I'm <span>Bandi Sushma Praveena</span></h1>
+
+            <p>
+                B.Tech Data Science Student | Aspiring Data Analyst
+            </p>
+
+            <a class="button" href="#projects">View My Project</a>
+
+            <a class="button"
+               href="https://github.com/sushmapraveenabandi-afk"
+               target="_blank">
+                GitHub
+            </a>
+        </div>
+
+    </section>
+
+
+    <!-- About -->
+    <section id="about">
+
+        <h2>About Me</h2>
+
+        <div class="about">
+
+            <p>
+                I am a third-year B.Tech Data Science student at
+                Acharya Nagarjuna University. I am interested in
+                data analysis, data visualization and using technology
+                to turn data into meaningful insights.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Skills -->
+    <section id="skills">
+
+        <h2>Skills</h2>
+
+        <div class="skills">
+
+            <div class="skill">Python</div>
+            <div class="skill">SQL / MySQL</div>
+            <div class="skill">Excel</div>
+            <div class="skill">Tableau</div>
+            <div class="skill">Data Analysis</div>
+            <div class="skill">Data Visualization</div>
+            <div class="skill">GitHub</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Projects -->
+    <section id="projects">
+
+        <h2>Projects</h2>
+
+        <div class="project">
+
+            <h3>Healthcare Data Analysis</h3>
+
+            <p>
+                A data analysis project where I worked with healthcare
+                data to explore patterns, analyze information and
+                create meaningful visualizations.
+            </p>
+
+            <p>
+                <strong>Tools:</strong>
+                Excel, Python, SQL/MySQL, Tableau and GitHub
+            </p>
+
+            <a class="button"
+               href="https://github.com/sushmapraveenabandi-afk"
+               target="_blank">
+                View on GitHub
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Education -->
+    <section id="education" class="education">
+
+        <h2>Education</h2>
+
+        <h3>B.Tech in Data Science</h3>
+
+        <p>
+            Acharya Nagarjuna University
+        </p>
+
+        <p>
+            3rd Year
+        </p>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+
+        <h2>Contact Me</h2>
+
+        <p>
+            Interested in connecting or discussing opportunities?
+        </p>
+
+        <br>
+
+        <a class="button"
+           href="mailto:sushmapraveenabandi@gmail.com">
+            Email Me
+        </a>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 Bandi Sushma Praveena. All rights reserved.
+        </p>
+
+    </footer>
+
+</body>
+</html>
